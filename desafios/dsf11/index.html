@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio11</title>
+    <style> 
+        #container {
+            height: 96vh;
+            max-width: 1800px;
+            position: relative;
+            background-image: url(espaco.jpg);
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            height: 97vh;
+            width: 450px;
+            background-image: url(astronauta.png);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-repeat: no-repeat;
+            transform: translate(-50%, -30%);
+        }
+    </style>
 </head>
 <body>
-    
+    <section id="container"> 
+        <article id="conteudo"></article>
+    </section>
 </body>
 </html>
