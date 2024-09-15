@@ -24,9 +24,17 @@
             color: white;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         tfoot {
             background-color: gray;
             color: white;
+    
 
         
         }
@@ -37,13 +45,14 @@
     </style>
 </head>
 <body>
-    <h1> OS 10 ESTADOS COM MAIOR POPULAÇÃO </h1>
+     
     <table>
+        <caption> população das unidades federativas </caption>
         <thead>
             <tr> 
                 
-                <th> estado </th>
-                <th> população </th>
+                <th scope="col"> estado </th>
+                <th scope="col" style="width: 50px;"> população </th>
             </tr>
         </thead>
 
@@ -190,7 +199,7 @@
 
         <tfoot>
           <strong>  <tr> 
-                <th> total de habitantes no Brasil </th>
+                <th scope="row"> total de habitantes </th>
                 <td class="num"> 215,3 milhões (2022)</td>
             </tr> </strong>
         </tfoot>
