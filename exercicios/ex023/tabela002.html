@@ -12,6 +12,13 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray ;
         }
 
         td,th {
@@ -37,6 +44,10 @@
     
 
         
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         .num {
