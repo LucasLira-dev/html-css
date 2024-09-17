@@ -12,9 +12,19 @@
         table {
             border-collapse: collapse;
         }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
         th, td {
-            border: 1px solid black;
+            border: 2px solid black;
             padding: 10px;
+            
+        }
+        .gray {
+            background-color: gray;
+            color: white;
         }
     </style>
 </head>
@@ -33,9 +43,57 @@
                <th scope="col"> nota 2 </th>
             </tr>
         </thead>
-
+            
         <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup"> exatas</th>
+                    <td>matematica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    
+                    
+                    
+                </tr>
 
+                <tr>
+                    <td>fisica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                <td>quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td> </tr>
+
+                <tr>
+                    <td>biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr class="gray">
+                    <td colspan="4"> media de exatas </td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <th scope="row"> humanas</th>
+                    <td>historia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr class="gray">
+                    <td colspan="4"> media de humanas</td>
+                    <td>0.0</td>
+                    
+                </tr>
         </tbody>
     </table>
 </body>
