@@ -6,24 +6,34 @@
     <title>testando posiçoes de imagens</title>
     <style> 
     
-     body {
-            
-            background-image: url(imagens/inter.png);
-            background-repeat: no-repeat;
-        
+    body {
+        background-color: aqua;
+    }
 
-     }
-
-     div#gremio {
-        height: 87vh;
-        background-image: url(imagens/gremio.png);
-        background-repeat: no-repeat;
-        background-position: right top;
-     }
+    main {
+        position: relative;
+        width: 50%vw;
+        height: 90vh;
+        background-color: black;
+    }
+    
+    .bloco1 {
+        position: absolute;
+        top: 0px;
+        left: 90vw;
+    }
+    p {
+        position: absolute;
+        background: white;
+        font-size: 5em;
+        top: 30%;
+        left: 50%;
+    }
     </style>
 </head>
-<body>
-
-    <div class="bloco" id="gremio"></div>
+<body> <main> 
+    <p>oi</p>
+    <div class="bloco1"> <img src="imagens/inter.png" alt="inter"></div>
+    <div class="bloco2"> <img src="imagens/gremio.png" alt="gremio"></div> </main>
 </body>
 </html>
