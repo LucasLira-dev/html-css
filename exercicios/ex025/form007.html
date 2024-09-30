@@ -6,24 +6,39 @@
     <title>formularios</title>
 </head>
 <body>
-    <form action="" method="get" autocomplete="on">
+    <form action="" method="post" autocomplete="on">
        
         
         <p> <label for="estado">estado</label>
-            <select name="estado" id="estado">
-                <optgroup>
-                    <label="sudeste"> </label>
-                
-                <option value="rj">  Rio de janeiro</option>
+            <select name="estado" id="estado" required>
+                <optgroup label="sudeste">
+                    
+                <option value="rj" >  Rio de janeiro</option>
                 <option value="sp"> são paulo</option>
                 <option value="mg"> minas gerais</option>
             </optgroup>
-                <option value="ce"> ceará</option>
-                <option value="pe"> pernambuco</option>
+
+            <optgroup label="nordeste">
+                <option value="ce" > ceará</option>
+                <option value="pe" > pernambuco</option>
                 <option value="ma"> maranhao</option>
             </select>
+        </outgroup>
         </p>
 
+        <p>
+            <label for="prof"> profissao</label>
+            <input type="text" name="prof" id="prof" list="lista">
+            <datalist id="lista">
+                <option value="adm">administrador</option>
+                <option value="dev">desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="msg"> mensagem </label> <br>
+            <textarea name="msg" id="msg" cols="30" rows="10" style="resize: none;" placeholder="digite sua mensagem aqui"></textarea>
+        </p>
 
         <p>
             <input type="submit" value="enviar">
