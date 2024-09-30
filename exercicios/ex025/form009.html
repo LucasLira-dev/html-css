@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <p>
+            <label for="num"> numero </label>
+            <input type="range" name="num" id="num" min="0" max="10" value="0" oninput="val.innerHTML = Number (num.value)">
+            <output id="val"> 0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="apagar">
+        </p>
+    </form>
+</body>
+</html>
