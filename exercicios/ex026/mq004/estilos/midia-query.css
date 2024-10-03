@@ -16,7 +16,7 @@ main {
  }
 /*impressõ*/
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     body {
         background-image: url(../imagens/back-tablet.jpg) ;
     }
@@ -28,9 +28,9 @@ main {
         display: block;
     }
 
-} /*tablet */ 
+} /*tablet em pe */ 
 
-@media only screen and (min-width: 900px) { 
+@media only screen and (min-width: 992px) { 
     body {
         background-image: url(../imagens/back-pc.jpg);
     }
