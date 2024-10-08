@@ -19,15 +19,28 @@ header > h1 {
     text-align: center;
 }
 
-nav > ul {
+#icon {
+    background-color: rgb(62, 55, 55);
+    color: white;
+    text-align: center;
     display: block;
+    padding: 10px;
+    cursor: pointer;
 }
 
-ul {
+#icon:hover {
+    background-color: white;
+    color: black;
+}
+nav  {
+    display: none;
+}
+
+ nav > ul {
     list-style: none;
 }
 
-li > a {
+ nav > ul > li > a {
     display: block;
     padding: 10px;
     border-top: 2px solid rgb(182, 179, 179);
