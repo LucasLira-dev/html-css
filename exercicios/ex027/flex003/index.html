@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+        .container {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+
+        .filho {
+           
+            flex: auto;
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="filho">exemplo de bloco A</div>
+        <div class="filho"> exemplo de bloco B</div>
+        <div class="filho"> exemplo de bloco C</div>
+        <div class="filho"> exemplo de bloco D </div>
+        <div class="filho"> exemplo de bloco E</div>
+        <div class="filho"> exemplo de bloco F </div>
+        <div class="filho"> exemplo de bloco G </div>
+    </div>
+    
+</body>
+</html>
