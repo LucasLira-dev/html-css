@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 580px) {
+   
+
+   nav a {
+    display: inline-block;
+   }
+   #icon {
+    display: block;
+   } 
+   
+   header {
+    display: flex;
+    flex-flow: column nowrap;
+    
+   }
+
+   nav {
+    justify-content: flex-end;
+    width: 90vw;
+    display: none;
+   }
+
+   h1 {
+    flex-basis: 50px;
+   }
+
+
+}
