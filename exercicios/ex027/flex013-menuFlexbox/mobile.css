@@ -5,9 +5,15 @@
 
    nav a {
     display: inline-block;
+    width: 50vw;
+    
    }
    #icon {
     display: block;
+    position: fixed;
+    background-color:rgba(21, 18, 18, 0.092);
+    top: 40px;
+    left: 0px;
    } 
    
    header {
@@ -16,10 +22,11 @@
     
    }
 
-   nav {
-    justify-content: flex-end;
-    width: 90vw;
+   nav #menu {
+    justify-content: flex-start;
+    width: 50vw;
     display: none;
+    
    }
 
    h1 {
