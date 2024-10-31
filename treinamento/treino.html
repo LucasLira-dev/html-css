@@ -13,22 +13,29 @@
         background-image: url(imagens/2962646-paisagem-bela-noite-com-montanha-e-lago-vetor.jpg);
         width: 90vw;
         background-repeat: no-repeat;
-        position: relative;
+        background-size: auto;
+        
     }
      header {
         background-image:linear-gradient(to right, #392F51, #733C59 );
         background-size: cover;
         padding: 30px;
+        width: 100vw;
         text-align: center;
+        display: flex;
+        justify-content: flex-start;
      }
 
      nav {
-        display: inline-block;
-    
+        display: flex;
+        flex-flow: row nowrap;
+        
+
         
      }
   
      a {
+     
      margin: 10px;
      padding: 5px;
      color: aliceblue;
@@ -64,12 +71,14 @@
 }
     
     
-    img {
+    #gato {
         width: 50px;
-        position: absolute;
-        top: 10px;
-        left: 85%;
+        margin-left: 20px;
         
+    }
+
+    img {
+        width: 50PX;
     }
 
     p {
@@ -97,13 +106,34 @@
 }
    
 #conteiner {
-    width: 400px;
-    background-color: antiquewhite;
-    margin-left: -80px;
-    display: flex;
-    overflow-x: auto;
     
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter;
+    overflow: hidden;
 }
+
+#conteiner:hover {
+    backdrop-filter: blur(20px);
+}
+
+
+#conteiner:hover #texto {
+    top: 0;
+}
+
+#texto {
+    padding: 5px;
+    position: relative;
+    top: 300px;
+    transition: top 1s;
+}
+
+
 
 ::-webkit-scrollbar{
     background-color: aqua;
@@ -112,14 +142,14 @@
 
 
 
-#conteiner div p {
+/*#conteiner div p {
     text-align: center;
     color: #733C59;
     background-color: #EF626F;
     margin: 5px;
     width: 200px;
     height: 80px;
-}
+} */
 
     
     
@@ -132,44 +162,25 @@
             <a href="#"> saiba mais</a>
             <a href="#"> contato</a>
         </nav>
+        <img src="imagens/gato.png" alt="logo" id="gato">
 
     </header> 
     <main> 
-      <section>
-       <h1>Minha história</h1>
-       <p>Olá, meu nome é Lucas, tenho 20 anos e estou iniciando na programação. Estou aprendendo HTML e CSS há 2 meses, e recentemente comecei a aprender JavaScript </p>
+      <section id="conteiner">
+        <div id="texto">
+            <h1>Minha história</h1>
+            <p>Olá, meu nome é Lucas, tenho 20 anos e estou iniciando na programação. Estou aprendendo HTML e CSS há 2 meses, e recentemente comecei a aprender JavaScript </p>
+       </div>
       </section>
       
-      <section>
-        <img src="imagens/gato.png" alt="logo">
-      </section>
+     
 
       <section>
         <img class="img1" src="imagens/logo-youtube.jpg" alt="logo-youtube">
         <img class="img2" src="imagens/" alt="">
       </section>
       
-      <section id="conteiner">
-         <div>
-            <p>1</p>
-         </div>
-
-         <div>
-            <p>2</p>
-         </div>
-
-         <div>
-            <p>3</p>
-         </div>
-
-         <div>
-            <p>4</p>
-         </div>
-
-         <div>
-            <p>5</p>
-         </div>
-         
+      
       </section>
 
      </main>
