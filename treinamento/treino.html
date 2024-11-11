@@ -54,11 +54,25 @@
      }
 
      main {
-       
+        
         margin: auto;
-        max-width: 50vw;
+        width:100vw;
+        min-height: 100vh;
+        position: relative;
         
      }
+
+     .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #EF626F;
+        clip-path: circle(50% at bottom right);
+     }
+
+
      
      h1 {
         color: #EF626F;
@@ -152,6 +166,8 @@
 } */
 
 
+
+
     
     
     </style>
@@ -167,12 +183,10 @@
 
     </header> 
     <main> 
-      <section id="conteiner">
-        <img src="imagens/flu.png" alt="">
-        <p>oiiiii</p>
+      <section class="circle">
+           <img src="imagens/flu.png" alt="">
       </section>
-      
 
      </main>
 </body>
-</html>ó
+</html>
